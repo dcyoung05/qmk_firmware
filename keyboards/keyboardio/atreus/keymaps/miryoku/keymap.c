@@ -63,10 +63,21 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     case LALT_T(KC_S):
     case LALT_T(KC_L):
     case LGUI_T(KC_QUOT):
-      return TAPPING_TERM + 200;
+      return 400;
     case LT(NAV, KC_SPC):
-      return TAPPING_TERM + 25;
+      return 225;
     default:
-      return TAPPING_TERM;
+      return 200;
   }
+}
+
+bool get_permissive_hold(uint16_t keycode, keyrecord_t *record) {
+    switch(keycode) {
+        case LSFT_T(KC_F):
+        case LSFT_T(KC_J):
+        case LT(NAV, KC_SPC):
+            return true;
+        default:
+            return false;
+    }
 }
