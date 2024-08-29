@@ -1,0 +1,5 @@
+#pragma once
+
+#define MAX_DEFERRED_EXECUTORS 10
+
+#define SMTD_GLOBAL_RELEASE_TERM 50
