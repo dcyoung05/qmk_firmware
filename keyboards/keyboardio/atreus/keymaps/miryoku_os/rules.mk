@@ -1,0 +1,3 @@
+LTO_ENABLE = yes
+UNICODE_ENABLE = no
+COMBO_ENABLE = yes
